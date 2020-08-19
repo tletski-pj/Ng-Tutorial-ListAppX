@@ -1,0 +1,10 @@
+<div *ngIf="iceCreams">
+    <h3>Ice Creams</h3>
+    <ul>
+        <li *ngFor="let iceCream of iceCreams | async; let i = index">
+            <span>{{ iceCream.flavor }}</span>
+            <span>{{ iceCream.maker }}</span>
+            <button (click)="deleteIceCream(i)">Remove {{i+1}}</button>
+        </li>
+    </ul>
+</div>

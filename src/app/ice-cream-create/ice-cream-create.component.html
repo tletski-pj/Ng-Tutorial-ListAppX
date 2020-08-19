@@ -1,0 +1,9 @@
+<div>
+    <h3>Enter Your Favorite</h3>
+    <div>
+        <input type="text" placeholder="flavor" #flavor>
+        <input type="text" placeholder="maker" #maker>
+        <br>
+        <button (click)="addIceCream(flavor.value, maker.value)">Add an Ice Cream</button>
+    </div>
+</div>

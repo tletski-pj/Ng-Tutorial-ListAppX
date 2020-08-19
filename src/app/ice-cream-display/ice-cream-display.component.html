@@ -1,0 +1,6 @@
+<h1>Favorite Ice Creams</h1>
+<div class="link-home">
+    <a [routerLink]="['/home']">Go back home...</a>
+</div>
+<app-ice-cream-create (newFlavor)="onNewFlavor($event)"></app-ice-cream-create>
+<app-ice-cream-read [iceCreams]="iceCreamObservable" (deleted)="onDeleteFlavor($event)"></app-ice-cream-read>
