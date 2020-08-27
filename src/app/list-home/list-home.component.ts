@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-list-home',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-home.component.scss']
 })
 export class ListHomeComponent implements OnInit {
+  user: User;
 
-  constructor() { }
+  constructor() {
+    this.user = {name: 'Tex'};
+  }
 
   ngOnInit() { }
 }

@@ -1,0 +1,6 @@
+<h1>Favorite Muscle Cars</h1>
+<div class="link-home">
+    <a [routerLink]="['/home']">Go back home...</a>
+</div>
+<app-muscle-car-create (newMuscleCar)="onNewCar($event)"></app-muscle-car-create>
+<app-muscle-car-read [muscleCars]="muscleCarsObservable" (deleted)="onDeleteMuscleCar($event)"></app-muscle-car-read>

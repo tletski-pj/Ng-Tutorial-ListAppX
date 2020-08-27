@@ -1,0 +1,11 @@
+<div *ngIf="muscleCars">
+    <h3>Muscle Cars</h3>
+    <ul>
+        <li *ngFor="let muscleCar of muscleCars | async; let i = index">
+            <span>{{ muscleCar.make }}</span>
+            <span>{{ muscleCar.model }}</span>
+            <span>{{ muscleCar.year }}</span>
+            <button (click)="deleteMuscleCar(i)">Remove {{i+1}}</button>
+        </li>
+    </ul>
+</div>

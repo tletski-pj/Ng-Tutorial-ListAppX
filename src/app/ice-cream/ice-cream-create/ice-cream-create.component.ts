@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { IceCream } from './../models/ice-cream';
+import { IceCream } from '../../models/ice-cream';
 
 @Component({
   selector: 'app-ice-cream-create',

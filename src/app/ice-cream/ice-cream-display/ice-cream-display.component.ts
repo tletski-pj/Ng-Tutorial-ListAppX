@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
-import { IceCream } from './../models/ice-cream';
+import { IceCream } from '../../models/ice-cream';
 
 @Component({
   selector: 'app-ice-cream-display',

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { IceCream } from './../models/ice-cream';
+import { IceCream } from '../../models/ice-cream';
 import { Observable } from 'rxjs/Observable';
 
 @Component({

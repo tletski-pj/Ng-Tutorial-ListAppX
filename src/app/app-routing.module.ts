@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ListHomeComponent } from './list-home/list-home.component';
-import { IceCreamDisplayComponent } from './ice-cream-display/ice-cream-display.component';
 
 const routes: Routes = [
   {path: '', component: ListHomeComponent},
   {path: 'home', component: ListHomeComponent},
-  {path: 'icecream', component: IceCreamDisplayComponent}
+  {
+    path: 'icecream',
+    loadChildren: () => import('./ice-cream/ice-cream.module').then(m => m.IceCreamModule)
+  },
+  {
+    path: 'musclecar',
+    loadChildren: () => import('./muscle-car/muscle-car.module').then(m => m.MuscleCarModule)
+  }
 ];
 
 @NgModule({

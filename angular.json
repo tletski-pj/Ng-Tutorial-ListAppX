@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ListApp1": {
+    "ListAppX": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ListApp1",
+            "outputPath": "dist/ListAppX",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ListApp1:build"
+            "browserTarget": "ListAppX:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ListApp1:build:production"
+              "browserTarget": "ListAppX:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ListApp1:build"
+            "browserTarget": "ListAppX:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ListApp1:serve"
+            "devServerTarget": "ListAppX:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ListApp1:serve:production"
+              "devServerTarget": "ListAppX:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ListApp1"
+  "defaultProject": "ListAppX"
 }
