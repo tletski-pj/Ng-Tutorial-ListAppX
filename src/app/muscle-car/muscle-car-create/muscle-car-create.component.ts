@@ -13,7 +13,7 @@ export class MuscleCarCreateComponent implements OnInit {
 
   ngOnInit() { }
 
-  addMuscleCar(theMake: string, theModel: string, theYear: string, theUrl: string) {
+  addMuscleCar(theMake: string, theModel: string, theYear: string) {
     const muscleCar: MuscleCar = {make: theMake, model: theModel, year: theYear};
     this.newMuscleCar.emit(muscleCar);
   }
